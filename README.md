@@ -1,37 +1,46 @@
-Notes: (Under construction!)
+# Notes: (Under construction! 🙄)
 
-What is :
+## What is Assembly language?
 
-Why is :
+Assembly language is a low-level programming language bridging human-readable instructions and machine code. It offers precise hardware control but is complex. Primarily used in low-level system programming, device drivers, and embedded systems.
 
-How to :
+## Why do we even learn (or check) Assembly language?
 
-Bus:
+Learning Assembly language provides low-level insights into hardware, enables performance optimization, aids embedded systems development, and supports reverse engineering and legacy code maintenance. Valuable for computer architecture research, compiler development, and understanding fundamental CS concepts. High-level languages are preferred for general software development due to productivity and portability.
 
-Why:
+## What is a bus (in the context of a microcomputer)?
 
-Buses - Internal bus, External bus
+A bus is a communication pathway that allows data and instructions to be transmitted between the CPU, memory, and peripheral devices.
 
-Internal bus - Data bus (half duplex), Control bus (half duplex), Address bus (simplex)
+## Types of Buses
 
-//
-Processor to Ram => Internal bus
+1. Internal bus (Processor to Ram)
 
-Ram to i/o devices => External bus
-//
-Controll bus is used to determine the operation read/write or to send/receive status msg, err msg
-Processor use Address bus/create address to identify the ram address to read/write
-Ram use Data bus to send data from ram to processor
+   1. Data bus (Half duplex)
+      Ram use Data bus to send data from ram to processor
+   2. Control bus (Half duplex)
+      Control bus is used to determine the operation read/write or to send/receive status msg, err msg
+   3. Address bus (Simplex)
+      Processor use Address bus/create address to identify the ram address to read/write
 
-Register:
-Why:
+2. External bus (Ram to i/o devices)
 
-Registers - General/Multi Purpose, Special Purpose
+## What is a Register?
 
-General/Multi Purpose - AX (Accumulator), BX (Base), CX (Count), DX (Destination)
+A register is a small, fast storage area within a CPU used to temporarily hold data and instructions that the CPU is currently processing.
 
-AX = Size = 16 bit, EAX = 32 bit, RAX = 64 (bit)
-AX (16bit) = AH (8bit) + AL (8bit)
+## Types of Registers?
+
+1. General/Multi Purpose
+   1. AX (Accumulator)
+   2. BX (Base)
+   3. CX (Count)
+   4. DX (Destination)
+2. Special Purpose
+
+AX = 16 bit = AH 8bit + AL 8bit
+EAX = 32 bit
+RAX = 64 bit
 
 //
 CPU word size/CPU woidth = Number of bit that cpu can process
