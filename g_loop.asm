@@ -2,7 +2,7 @@
 .data   
 .code
 main proc
-           mov cl, 10h          ; Loop will start from 10 until 1
+           mov cl, 9h          ; Loop will start from 9 until 1
            top:                 ; Start of the loop
                                 
                   mov dl, 54h
